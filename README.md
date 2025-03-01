@@ -41,7 +41,7 @@ npm start
 ```
 
 ### API Endpoint
-**GET** `/getSubnet`
+**GET** `/api/v1/subnetting`
 
 #### Query Parameters:
 | Parameter     | Type   | Description |
@@ -52,7 +52,7 @@ npm start
 
 #### Example Request
 ```
-GET /getSubnet?networkClass=C&ip=192.168.1.1&cidr=24
+GET /api/v1/subnetting?networkClass=C&ip=192.168.1.1&cidr=24
 ```
 
 #### Response Format
