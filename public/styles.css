@@ -119,25 +119,6 @@ label[for="output"] {
     box-shadow: 8px 10px 14px rgba(0, 0, 0, 0.2);
 }
 
-
-@keyframes shake {
-    25% {
-        transform: skew(10deg) translateX(-50%);
-    }
-
-    50% {
-        transform: skew(0) translateX(-50%);
-    }
-
-    75% {
-        transform: skew(-10deg) translateX(-50%);
-    }
-
-    100% {
-        transform: skew(0) translateX(-50%);
-    }
-}
-
 @media only screen and (max-width: 1200px) {
     .container {
         margin: 0 15px;
