@@ -2,7 +2,7 @@
 
 This repository contains a Node.js API that calculates subnet information by executing a Python script.
 
-![Subnet Calculator UI](https://raw.githubusercontent.com/eriaht/rest-subnetting/public/screenshot.png)
+![Subnet Calculator UI](https://github.com/eriaht/rest-subnetting/blob/main/public/screenshot.png)
 
 
 ## Features
