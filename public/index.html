@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subnet Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Subnet Calculator</h1>
+        <p class="mark">made by eriaht q(≧▽≦q)</p>
+        <form class="form">
+            <div class="form_group">
+                <label for="network_class">Network class</label>
+                <input type="text" id="network_class" name="network_class" value="c">
+            </div>
+            <div class="form_group">
+                <label for="ip">IP Address</label>
+                <input type="text" id="ip" name="ip" value="192.168.1.1">
+            </div>
+            <div class="form_group">
+                <label for="cidr">CIDR</label>
+                <input type="text" id="cidr" name="cidr" value="24">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+        <div class="output">
+            
+        </div>
+    </div>
+</body>
+</html>

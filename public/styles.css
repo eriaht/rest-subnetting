@@ -1,0 +1,150 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Geist", serif;
+    font-size: 2rem;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #181a1e;
+    color: rgb(236, 236, 236);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 50px 0;
+    color: transparent;
+    background: linear-gradient(to right bottom, rgb(185, 142, 221), #5758BB);
+    background-clip: text;
+}
+
+.mark {
+    font-size: 0.7rem;
+    margin-top: -50px;
+    margin-bottom: 15px;
+}
+
+.form {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 20%;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+}
+
+.form_group input {
+    font-size: 1.2rem;
+    height: 2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #2b2c2e;
+    border: 1px solid rgb(74, 73, 73);
+    color: white;
+}
+
+.form_group input[type="radio"] {
+    flex-direction: row;
+}
+
+.btn {
+    font-size: 1rem;
+    display: inline;
+    padding: 10px 4px;
+    border-radius: 5px;
+    width: 150px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    background: linear-gradient(to right bottom, rgb(185, 142, 221), #5758BB);
+}
+
+.btn:hover {
+    background-color: #5758BB;
+    color: white;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+}
+
+label {
+    font-weight: bold;
+}
+
+label[for="output"] {
+    margin-top: 200px;
+}
+
+.output {
+    margin-top: 50px;
+    font-size: 1rem;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    overflow-y: scroll;
+    height: 400px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.detail {
+    display: flex;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    background-color: #2b2c2e;
+    border: 1px solid rgb(74, 73, 73);
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.detail:hover {
+    box-shadow: 8px 10px 14px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes shake {
+    25% {
+        transform: skew(10deg) translateX(-50%);
+    }
+
+    50% {
+        transform: skew(0) translateX(-50%);
+    }
+
+    75% {
+        transform: skew(-10deg) translateX(-50%);
+    }
+
+    100% {
+        transform: skew(0) translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .output {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto;
+    }
+}
