@@ -65,6 +65,3 @@ GET /getSubnet?networkClass=C&ip=192.168.1.1&cidr=24
 └── package.json      # Project dependencies
 ```
 
-## License
-This project is licensed under the MIT License.
-
