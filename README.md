@@ -23,6 +23,17 @@ Ensure you have the following installed:
    npm install
    ```
 
+## File Structure
+```
+.
+├── controllers/
+│   ├── getSubnet.js  # Handles subnet calculations
+├── subnetting/
+│   ├── subnet.py     # Python script for subnet calculations
+├── server.js         # Entry point of the API
+└── package.json      # Project dependencies
+```
+
 ## Usage
 Start the server:
 ```sh
@@ -52,16 +63,5 @@ GET /getSubnet?networkClass=C&ip=192.168.1.1&cidr=24
     "subnetData": { ... }
   }
 }
-```
-
-## File Structure
-```
-.
-├── controllers/
-│   ├── getSubnet.js  # Handles subnet calculations
-├── subnetting/
-│   ├── subnet.py     # Python script for subnet calculations
-├── server.js         # Entry point of the API
-└── package.json      # Project dependencies
 ```
 
