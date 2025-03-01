@@ -29,8 +29,7 @@ Ensure you have the following installed:
 ## File Structure
 ```
 .
-├── controllers/
-│   ├── getSubnet.js  # Handles subnet calculations
+├── controllers.js    # Handles subnet calculations in the getSubnet function
 ├── subnetting/
 │   ├── subnet.py     # Python script for subnet calculations
 ├── server.js         # Entry point of the API
