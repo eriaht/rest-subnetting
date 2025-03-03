@@ -62,7 +62,19 @@ GET /api/v1/subnetting?networkClass=C&ip=192.168.1.1&cidr=24
 {
   "status": "success",
   "data": {
-    "subnetData": { ... }
+    "subnetData": {
+      "class_addr": "C",
+      "ip": "192.168.1.1",
+      "mask": "255.255.255.0",
+      "cidr": "/24",
+      "net_addr": "192.168.1.0",
+      "broadcast": "192.168.1.255",
+      "first_host": "192.168.1.1",
+      "last_host": "192.168.1.254",
+      "hosts": 256,
+      "usable_hosts": 254,
+      "possible_networks": 1
+    }
   }
 }
 ```

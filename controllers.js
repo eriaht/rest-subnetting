@@ -4,7 +4,7 @@ module.exports.getSubnet = (req, res) => {
   const { networkClass, ip, cidr } = req.query;
 
   // Build command string
-  let subnetCommand = `python ${__dirname}/subnetting/subnet.py --net_class ${networkClass} --ip ${ip} --cidr ${cidr} --json=True`;
+  let subnetCommand = `python ${__dirname}/subnetting/subnet.py --net_class ${networkClass} --ip ${ip} --cidr /${cidr} --json=True`;
 
   // Execute subnetting cli tool
   exec(subnetCommand, (err, stdout) => {
