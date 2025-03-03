@@ -46,11 +46,11 @@ npm start
 **GET** `/api/v1/subnetting`
 
 #### Query Parameters:
-| Parameter     | Type   | Description |
-|--------------|--------|-------------|
-| networkClass | string | Network class (e.g., A, B, C) |
-| ip           | string | IP address |
-| cidr         | number | CIDR notation |
+| Parameter     | Type   | Description | Required |
+|--------------|--------|-------------|-------------
+| networkClass | string | Network class (e.g., A, B, C) | True |
+| ip           | string | IP address | True |
+| cidr         | number | CIDR notation | True |
 
 #### Example Request
 ```
