@@ -18,8 +18,8 @@ Ensure you have the following installed:
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone [<repository-url>](https://github.com/eriaht/rest-subnetting)
+   cd rest-subnetting
    ```
 2. Install dependencies:
    ```sh
